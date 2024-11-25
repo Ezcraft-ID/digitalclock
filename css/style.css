@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+.clock-box {
+    background-color: #111;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+.days {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+.day {
+    color: #444;
+}
+.active {
+    color: white;
+    font-weight: bold;
+}
+.separator {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.separator.hidden {
+    opacity: 0;
+}
+.time {
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.line {
+    width: 2px;
+    height: 90px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
